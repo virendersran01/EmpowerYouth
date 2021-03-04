@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/empoweryouth_logo"
+        android:src="@drawable/ey"
+        android:layout_margin="48dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/imageTextLogo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:src="@drawable/empoweryouth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textTagLine"
+        app:layout_constraintStart_toStartOf="@id/textTagLine"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintVertical_bias="0.7"
+        android:contentDescription="@string/empoweryouth_logo" />
+    
+    <View
+        android:id="@+id/viewSupporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintStart_toStartOf="@id/imageTextLogo"
+        app:layout_constraintEnd_toEndOf="@id/imageTextLogo"
+        app:layout_constraintBottom_toBottomOf="@id/imageTextLogo"/>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textTagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empowering youth and going beyond"
+        app:fontFamily="@font/lorabold"
+        app:layout_constraintEnd_toEndOf="@id/imageLogo"
+        app:layout_constraintStart_toStartOf="@id/imageLogo"
+        app:layout_constraintTop_toBottomOf="@id/viewSupporter"/>
+
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
